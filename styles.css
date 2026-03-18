@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(255, 219, 245);
+}
+h1 {
+  color: rgb(0, 0, 184);
+text-shadow: 1px 0px 0px #000000;
+text-shadow: 0px 1px 0px #000000;
+text-shadow: -1px 0px 0px #000000;
+text-shadow: 0px -1px 0px #000000;
+font-size: 40px;
+}
+p {
+  color: rgb(203, 0, 0);
+text-shadow: 1px 0px 0px #000000;
+text-shadow: 0px 1px 0px #000000;
+text-shadow: -1px 0px 0px #000000;
+text-shadow: 0px -1px 0px #000000;
+font-size: 25px;
+}
+a {
+  color: rgb(0, 0, 184);
+text-shadow: 1px 0px 0px #000000;
+text-shadow: 0px 1px 0px #000000;
+text-shadow: -1px 0px 0px #000000;
+text-shadow: 0px -1px 0px #000000;
+font-size: 20px;
+}
