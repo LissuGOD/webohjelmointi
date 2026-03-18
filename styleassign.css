@@ -1,0 +1,48 @@
+html, body {
+ cursor: url('media/cursor.png')5 25, auto !important;}
+html{min-height: 100%;}
+
+body {
+padding-bottom: 50px;
+background-color: rgb(255, 219, 245);
+}
+h1 {
+  color: rgb(0, 0, 184);
+text-shadow: 1px 0px 0px #000000;
+text-shadow: 0px 1px 0px #000000;
+text-shadow: -1px 0px 0px #000000;
+text-shadow: 0px -1px 0px #000000;
+font-size: 40px;
+}
+p {
+  color: rgb(203, 0, 0);
+text-shadow: 1px 0px 0px #000000;
+text-shadow: 0px 1px 0px #000000;
+text-shadow: -1px 0px 0px #000000;
+text-shadow: 0px -1px 0px #000000;
+font-size: 25px;
+
+}
+
+
+a {
+    cursor: url('media/cursor2.png')5 25, auto !important;
+}
+
+.cursor-fihh {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: url('media/fihhy.png') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-100%, -40%);
+    transition: transform 0.1s ease;
+}
+.big-center-link {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    cursor: url('media/cursor2.png')5 25, auto !important;
+}

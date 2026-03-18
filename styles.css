@@ -32,44 +32,47 @@ a {
   color: rgb(255, 255, 255);
 font-size: 20px;
 }
+
 a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     cursor: url('media/cursor2.png')5 25, auto !important;
-  text-decoration: none;
-  display: inline-block; /* Crucial: Allows scaling */ 
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
-   text-shadow: 
-    /* Cardinal directions */
-    1px 0px 0px #000000,
-    0px 1px 0px #000000,
-    -1px 0px 0px #000000,
-    0px -1px 0px #000000,
-    /* Diagonals */
-    1px 1px 0px #000000,
-    -1px -1px 0px #000000,
-    1px -1px 0px #000000,
-    -1px 1px 0px #000000,
-    /* Extra positions for smoother rounding */
-    2px 0px 0px #000000,
-    0px 2px 0px #000000,
-    -2px 0px 0px #000000,
-    0px -2px 0px #000000,
-    2px 1px 0px #000000,
-    1px 2px 0px #000000,
-    -1px -2px 0px #000000,
-    -2px -1px 0px #000000,
-    2px -1px 0px #000000,
-    1px -2px 0px #000000,
-    -2px 1px 0px #000000,
-    -1px 2px 0px #000000;
-transform: translateZ(0); /* Forces hardware acceleration */
-  -webkit-font-smoothing: subpixel-antialiased; /* Improves text rendering */
-  backface-visibility: hidden; /* Helps with rendering performance */
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    min-width: 200px;  /* ADD THIS - makes both buttons same width */
+    text-align: center; /* ADD THIS - centers text inside */
+    text-shadow: 
+        1px 0px 0px #000000,
+        0px 1px 0px #000000,
+        -1px 0px 0px #000000,
+        0px -1px 0px #000000,
+        1px 1px 0px #000000,
+        -1px -1px 0px #000000,
+        1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        2px 0px 0px #000000,
+        0px 2px 0px #000000,
+        -2px 0px 0px #000000,
+        0px -2px 0px #000000,
+        2px 1px 0px #000000,
+        1px 2px 0px #000000,
+        -1px -2px 0px #000000,
+        -2px -1px 0px #000000,
+        2px -1px 0px #000000,
+        1px -2px 0px #000000,
+        -2px 1px 0px #000000,
+        -1px 2px 0px #000000;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+}
 }
 
 a {
@@ -88,6 +91,12 @@ a {
 /* Apply the animation on hover */
 a:hover {
     animation: pulse 1s infinite;
+  
+}
+
+a:not(:hover) {
+    transition: transform 0.1s ease-in;  /* Faster when leaving */
+    transform: scale(1);  /* Immediate return to normal */
 }
 
 .cursor-fihh {
