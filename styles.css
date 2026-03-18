@@ -8,6 +8,7 @@ text-shadow: 0px 1px 0px #000000;
 text-shadow: -1px 0px 0px #000000;
 text-shadow: 0px -1px 0px #000000;
 font-size: 40px;
+text-align: center;
 }
 p {
   color: rgb(203, 0, 0);
@@ -16,7 +17,12 @@ text-shadow: 0px 1px 0px #000000;
 text-shadow: -1px 0px 0px #000000;
 text-shadow: 0px -1px 0px #000000;
 font-size: 25px;
+text-align: center;
 }
+.link-container {
+  text-align: center;
+}
+
 a {
   color: rgb(0, 0, 184);
 text-shadow: 1px 0px 0px #000000;
@@ -24,4 +30,27 @@ text-shadow: 0px 1px 0px #000000;
 text-shadow: -1px 0px 0px #000000;
 text-shadow: 0px -1px 0px #000000;
 font-size: 20px;
+}
+a {
+  text-decoration: none;
+  display: inline-block; /* Crucial: Allows scaling */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+a {
+    display: inline-block; /* Essential for transform to work on links */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Keyframes define the pulsing movement */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } /* Grow */
+    100% { transform: scale(1); }  /* Shrink */
+}
+
+/* Apply the animation on hover */
+a:hover {
+    animation: pulse 1s infinite;
 }
