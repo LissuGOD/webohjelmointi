@@ -37,6 +37,33 @@ a {
   border-radius: 5px;
   font-weight: bold;
   transition: transform 0.3s ease-in-out; /* Smooth transition */
+   text-shadow: 
+    /* Cardinal directions */
+    1px 0px 0px #000000,
+    0px 1px 0px #000000,
+    -1px 0px 0px #000000,
+    0px -1px 0px #000000,
+    /* Diagonals */
+    1px 1px 0px #000000,
+    -1px -1px 0px #000000,
+    1px -1px 0px #000000,
+    -1px 1px 0px #000000,
+    /* Extra positions for smoother rounding */
+    2px 0px 0px #000000,
+    0px 2px 0px #000000,
+    -2px 0px 0px #000000,
+    0px -2px 0px #000000,
+    2px 1px 0px #000000,
+    1px 2px 0px #000000,
+    -1px -2px 0px #000000,
+    -2px -1px 0px #000000,
+    2px -1px 0px #000000,
+    1px -2px 0px #000000,
+    -2px 1px 0px #000000,
+    -1px 2px 0px #000000;
+transform: translateZ(0); /* Forces hardware acceleration */
+  -webkit-font-smoothing: subpixel-antialiased; /* Improves text rendering */
+  backface-visibility: hidden; /* Helps with rendering performance */
 }
 
 a {
