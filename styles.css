@@ -1,5 +1,9 @@
+html, body {
+ cursor: url('media/cursor.png')5 25, auto !important;}
+html{min-height: 100%;}
 body {
-  background-color: rgb(255, 219, 245);
+
+background-color: rgb(255, 219, 245);
 }
 h1 {
   color: rgb(0, 0, 184);
@@ -21,6 +25,7 @@ text-align: center;
 }
 .link-container {
   text-align: center;
+  
 }
 
 a {
@@ -28,6 +33,7 @@ a {
 font-size: 20px;
 }
 a {
+    cursor: url('media/cursor2.png')5 25, auto !important;
   text-decoration: none;
   display: inline-block; /* Crucial: Allows scaling */ 
   padding: 15px 30px;
