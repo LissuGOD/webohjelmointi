@@ -113,14 +113,14 @@ a:not(:hover) {
 
 .clock-wrapper {
     position: relative;
-    min-height: 300px; /* Adjust based on your needs */
+    min-height: 10px; /* Adjust based on your needs */
     margin: 20px 0;
 }
 
 .floating-clock {
     position: absolute !important;
-    top: 20px !important;  /* can use bottom or top, next line can use left or right, adjust here */
-    left: 50px !important;
+    top: 600px !important;  /* can use bottom or top, next line can use left or right, adjust here */
+    right: 200px !important;
     width: 250px;
     height: 250px;
     margin: 0 !important; /* Override the inline margin */
