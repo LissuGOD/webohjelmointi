@@ -119,7 +119,7 @@ a:not(:hover) {
 
 .floating-clock {
     position: absolute !important;
-    top: 20px !important;
+    top: 20px !important;  /* can use bottom or top, next line can use left or right, adjust here */
     left: 50px !important;
     width: 250px;
     height: 250px;
