@@ -1,3 +1,7 @@
+html, body {
+ cursor: url('media/cursor.png')5 25, auto !important;}
+html{min-height: 100%;}
+
 body {
   font-family: Arial;
   margin: 0;
@@ -36,9 +40,30 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  cursor: url('media/cursor2.png')5 25, auto !important;
 }
 
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+  cursor: url('media/cursor2.png')5 25, auto !important;
+}
+
+.big-center-link {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    cursor: url('media/cursor2.png')5 25, auto !important;
+}
+
+.cursor-fihh {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background: url('media/fihhy.png') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-100%, -40%);
+    transition: transform 0.1s ease;
 }
