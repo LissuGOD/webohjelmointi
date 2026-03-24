@@ -1,10 +1,23 @@
 html, body {
- cursor: url('media/cursor.png')5 25, auto !important;}
+ cursor: url('media/cursor.png') 5 25, auto !important;}
 html{min-height: 100%;}
 body {
-
+    margin: 0;
+    position: relative;
     background-color: rgb(163, 0, 0);
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("media/fihhy.png");
+    background-repeat: repeat;
+    opacity: 0.3; 
+    pointer-events: none;
+    z-index: -1;
+}
+
 h1 {
   color: rgb(0, 16, 161);
 text-shadow: 1px 0px 0px #000000;
