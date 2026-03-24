@@ -5,14 +5,14 @@ html{min-height: 100%;}
 body {
   font-family: Arial;
   margin: 0;
-  
+  background-color: #ffd1f2;
 }
 
 .header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
-  color: white;
+  background: #45e3c4;
+  color: rgb(38, 38, 38);
 }
 
 .header h1{
@@ -22,7 +22,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #45e3c4;
 }
 
 .note {
@@ -32,11 +32,11 @@ body {
 /* Navigaatiopalkki */
 .navbar {
   display: flex;
-  background-color: #333;
+  background-color: #d25ab8;
 }
 
 .navbar a {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #ffd1f2;
   color: black;
   cursor: url('media/cursor2.png')5 25, auto !important;
 }
